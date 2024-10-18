@@ -9,8 +9,15 @@ module.exports = {
   }, 
   devServer: { 
     static: {
-      directory: __dirname
-    } ,
+        directory: __dirname
+    },
+    proxy: [
+      {
+          context: ["/api"],
+          target: "https://localhost:9876",
+          secure: false
+      }
+    ],
     historyApiFallback: true
   }, 
   resolve: {
