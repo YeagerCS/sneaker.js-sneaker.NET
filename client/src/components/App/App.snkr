@@ -1,0 +1,30 @@
+import { SnkrComponent, enableRoutes, initCss, render } from "sneakerlib";
+import { WelcomeComponent } from "../Welcome/Welcome.snkr";
+import { NotFoundComponent } from "../NotFound/NotFound.snkr";
+
+const routes = {
+    "/": WelcomeComponent
+} 
+
+class AppComponent extends SnkrComponent{
+    constructor(){
+        super()
+    }
+
+    name = "App.html";
+
+    async init(){
+        await initCss("App.css")
+
+        this.routes();
+        enableRoutes(routes, this.routes)
+    }
+
+    async routes(){
+        const path = window.location.pathname;
+        
+        await render(routes[path] ?? NotFoundComponent, "router")
+    }
+}
+
+export { AppComponent }

@@ -1,0 +1,6 @@
+# .gitattributes
+
+*.snkr linguist-language=JavaScript
+*.sneaker linguist-language=JavaScript
+*.tsnkr linguist-language=TypeScript
+*.tsneaker linguist-language=TypeScript

@@ -1,0 +1,9 @@
+{
+  "ConnectionStrings": {
+    "MongoDB": "",
+    "RavenDB": ""
+  },
+  "SneakerDB": {
+    "Database": "Leuenburger"
+  }
+}

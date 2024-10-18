@@ -1,0 +1,28 @@
+{
+  "name": "sneaker.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "gc": "node scripts/gc.cjs",
+    "gs": "node scripts/gs.cjs",
+    "build": "webpack watch",
+    "start": "webpack serve --open --port 9875"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sneakerlib": "^1.2.2",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.91.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "babel-loader": "^9.1.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

@@ -1,0 +1,15 @@
+import { initCss, SnkrComponent } from "sneakerlib";
+
+class WelcomeComponent extends SnkrComponent {
+    constructor(){
+        super();
+    }
+
+    name = "Welcome.html";
+
+    async init(){
+        await initCss("Welcome.css");
+    }
+}
+
+export { WelcomeComponent };

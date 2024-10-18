@@ -1,0 +1,57 @@
+.sneaker-js{
+    width: 32.5%;
+    animation: spin 10s linear infinite; 
+}
+
+.black {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+}
+
+.black h1{
+    font-size: 50px;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+#sneaker{
+    color: yellow;
+    animation: glow 2s linear infinite;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00e6, 0 0 30px #ff00e6;
+  }
+  50% {
+    text-shadow: 0 0 20px #fff, 0 0 40px #ff00e6, 0 0 60px #ff00e6;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00e6, 0 0 30px #ff00e6;
+  }
+}

@@ -1,0 +1,35 @@
+.not-found{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 40px;
+}
+
+
+a{
+    color: yellow;
+}
+
+a:hover{
+    color: rgba(255, 255, 0, .9);
+}
+
+.error-code{
+    animation: glow 2s linear infinite;
+    font-size: 100px;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00e6, 0 0 30px #ff00e6;
+  }
+  50% {
+    text-shadow: 0 0 20px #fff, 0 0 40px #ff00e6, 0 0 60px #ff00e6;
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00e6, 0 0 30px #ff00e6;
+  }
+}
